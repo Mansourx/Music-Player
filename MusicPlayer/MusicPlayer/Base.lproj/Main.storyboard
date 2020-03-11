@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mansour Button Screen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MansourButtonScreen" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m0E-bJ-etp">
+                                <rect key="frame" x="57" y="245" width="300" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HQ-58-Y75">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="KIj-dU-T8g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Comedy">
+                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MansourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LGs-yH-YaA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OT-UA-KHY">
+                                        <rect key="frame" x="0.0" y="100" width="300" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="e6a-e2-HwG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Pop">
+                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MansourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHH-md-Uhh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFJ-Bm-Abx">
+                                        <rect key="frame" x="0.0" y="200" width="300" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="THX-DX-G84"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Hip-Hop/Rap">
+                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MansourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Etw-cQ-lyR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="60D-je-xuR"/>
+                                    <constraint firstAttribute="height" constant="260" id="Ch0-8H-BY8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRF-B3-7sb">
+                                <rect key="frame" x="212" y="692" width="145" height="60"/>
+                                <color key="backgroundColor" red="0.91094197939983756" green="0.92468844105879167" blue="0.96130555868148804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="pCw-zs-Q7L"/>
+                                    <constraint firstAttribute="height" constant="60" id="vYY-49-M1s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="NextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bkj-rJ-82b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFm-3P-Ue4">
+                                <rect key="frame" x="57" y="692" width="145" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="BP7-vy-tGh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="VEH-9j-za5"/>
+                                    <constraint firstAttribute="height" constant="60" id="VYo-GZ-sZr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="lJb-7n-8sH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="StopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0l-Pu-uhT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MRF-B3-7sb" secondAttribute="bottom" constant="110" id="1FA-6z-aaZ"/>
+                            <constraint firstItem="m0E-bJ-etp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1zd-bk-PTO"/>
+                            <constraint firstItem="m0E-bJ-etp" firstAttribute="leading" secondItem="rFm-3P-Ue4" secondAttribute="leading" id="6jQ-Kr-9yf"/>
+                            <constraint firstItem="MRF-B3-7sb" firstAttribute="baseline" secondItem="rFm-3P-Ue4" secondAttribute="baseline" id="Dr5-Fx-Qmv"/>
+                            <constraint firstItem="MRF-B3-7sb" firstAttribute="leading" secondItem="rFm-3P-Ue4" secondAttribute="trailing" constant="8" symbolic="YES" id="f9n-LS-vIt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MRF-B3-7sb" secondAttribute="trailing" constant="49" id="rwU-2L-bNe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
